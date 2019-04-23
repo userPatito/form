@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<!--<link rel="stylesheet" href="main.css">-->
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<h1>Llena el formulario de contacto</h1>
+	<form action="">
+		<fieldset>
+			<legend>Informacion personal</legend>
+			<label for="nombre">nombre</label>
+			<input type="text" placeholder="Tu nombre" id="nombre">
+			
+			<label for="email">email</label>
+			<input type="email" placeholder="Tu correo electronico" id="email">
+
+			<label for="celular">celular</label>
+			<input type="number" placeholder="Tu celular" id="celular">
+			
+			<label for="mensaje">mensaje</label>
+			<textarea id="mensaje" rows="15"></textarea>
+		</fieldset>
+		<fieldset>
+			<legend>Informacion sobre propiedad</legend>
+			<label for="vende_o_compra">vende o compra</label>
+			<input type="text" placeholder="Tu nombre" id="vende_o_compra">
+			
+			<label for="cantidad">cantidad</label>
+			<input type="number" id="cantidad">
+		</fieldset>
+		<fieldset>
+			<legend>Contacto</legend>
+			
+			<p>Como deseas ser contactado</p>
+			<label for="telefono">telefono</label>
+			<input type="radio" name="contacto" id="telefono">
+			<label for="correo">email</label>
+			<input type="radio" name="contacto" id="correo">
+
+			<p>Si eligio telefono</p>
+			<label for="fecha">fecha</label>
+			<input type="fecha" id="fecha">
+			
+			<label for="hora">hora</label>
+			<input type="time" id="hora">
+		</fieldset>
+
+		<input type="submit" value="enviar">
+	</form>
+</body>
+</html>
